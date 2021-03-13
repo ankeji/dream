@@ -35,7 +35,7 @@ module.exports = appInfo => {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
   };
   config.mongoose = {
-    url: 'mongodb://localhost:27017/egg_article',
+    url: 'mongodb://127.0.0.1:27017/test',
     options: {
       useNewUrlParser: true
     },
