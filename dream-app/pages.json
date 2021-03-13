@@ -25,6 +25,14 @@
             }
             
         }
+        ,{
+            "path" : "pages/success/success",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布成功",
+                "enablePullDownRefresh": false
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

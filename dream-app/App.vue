@@ -117,7 +117,9 @@
 	.justify-between {
 		justify-content: space-between;
 	}
-
+	.flex-column{
+		flex-direction: column;
+	}
 	.items-center {
 		align-items: center;
 	}
@@ -152,5 +154,8 @@
 
 	.w-full {
 		height: 100%;
+	}
+	.h-full{
+		height: 100vh;
 	}
 </style>

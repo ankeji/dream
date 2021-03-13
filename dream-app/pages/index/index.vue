@@ -51,7 +51,7 @@
 				<textarea maxlength='-1' class="more-input mt-32 detil-goods" auto-height
 					placeholder="请描述您的商品信息:如取件码、姓名等等;方面取货哦!" />
 			</view>
-			<view class="mt-32 w-full bg-paoc btn border-6">发布</view>
+			<view class="mt-32 w-full bg-paoc btn border-6" @click="gopay">发布</view>
 		</view>
 	</view>
 </template>
@@ -85,6 +85,11 @@
 		methods: {
 			tebClick(item) {
 				this.tabIndex = item.key
+			},
+			gopay(){
+				uni.reLaunch({
+				    url: '/pages/success/success'
+				});
 			}
 		}
 	}
