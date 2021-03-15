@@ -1,0 +1,84 @@
+
+.big-tab-box {
+	width: 100%;
+	height: 120rpx;
+	box-sizing: border-box;
+	overflow: hidden;
+	overflow-x: scroll;
+	border-top: solid 1px #e1e1e1;
+	position: fixed;
+	top: 88rpx;
+	z-index: 5;
+}
+.big-tab-box::-webkit-scrollbar {
+	display: none;
+}
+.tab-list {
+	width: auto;
+	padding: 16rpx 20rpx;
+	margin: 10rpx;
+	text-align: center;
+	color: #999999;
+	font-size: 32rpx;
+	border: solid 1px #FFFFFF;
+	border-radius: 80rpx;
+}
+.tab-list-active {
+	color: #46495f;
+	border: solid 1px #e1e1e1;
+	border-radius: 80rpx;
+}
+.run-img {
+	width: 30rpx;
+	height: 30rpx;
+}
+.server-css {
+	color: #46495F;
+	font-size: 26rpx;
+	line-height: 40rpx;
+}
+.run-img {
+	margin-right: 16rpx;
+}
+.server-status {}
+.point-red {
+	background-color: #ff6633;
+	width: 15rpx;
+	height: 15rpx;
+	border-radius: 30rpx;
+	border: 5rpx solid #fcc4b2;
+	margin-right: 16rpx;
+	margin-top: 12rpx;
+}
+.point-green {
+	background-color: #33CC66;
+	width: 15rpx;
+	height: 15rpx;
+	border-radius: 30rpx;
+	border: 5rpx solid rgb(195, 252, 213);
+	margin-right: 16rpx;
+	margin-top: 12rpx;
+}
+.more-input{
+	padding-bottom: 16rpx;
+}
+.other-mt{
+	margin-top: 40rpx;
+}
+.detil-goods{
+	min-height: 200rpx;
+}
+.money-width{
+	width: 300rpx;
+	padding: 8rpx;
+}
+.news-big-box{
+	margin-top: 152rpx;
+}
+.btn{
+	height: 100rpx;
+	color: #ffffff;
+	text-align: center;
+	line-height: 100rpx;
+}
+

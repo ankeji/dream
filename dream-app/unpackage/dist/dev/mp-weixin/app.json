@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/order/order",
+    "pages/success/success"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#46495f",
+    "selectedColor": "#ff6633",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabar/index1.png",
+        "selectedIconPath": "static/tabar/index2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "static/tabar/order1.png",
+        "selectedIconPath": "static/tabar/order2.png",
+        "text": "订单池"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/tabar/user1.png",
+        "selectedIconPath": "static/tabar/user2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

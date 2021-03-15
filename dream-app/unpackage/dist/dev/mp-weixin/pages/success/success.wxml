@@ -1,0 +1,1 @@
+<view class="px-32 w-full flex justify-center items-center flex-column"><image class="status-img" src="../../static/img/success.png" mode></image><view data-event-opts="{{[['tap',[['goToIndex',['$event']]]]]}}" class="mt-32 bg-paoc btn border-6" bindtap="__e">返回首页</view></view>
