@@ -25,7 +25,9 @@
 	page {
 		background-color: #f3f3f3;
 	}
-
+		
+	
+	
 	.mt-32 {
 		margin-top: 32rpx;
 	}
@@ -44,6 +46,10 @@
 
 	.mr-32 {
 		margin-right: 32rpx;
+	}
+	
+	.mr-16 {
+		margin-right: 16rpx;
 	}
 
 	.ma-32 {
@@ -84,17 +90,26 @@
 	}
 
 	.px-32 {
-		padding: 0 32rpx;
+		padding-left: 32rpx;
+		padding-right: 32rpx;
+		box-sizing: border-box;
+	}
+	
+	.px-16 {
+		padding-left: 16rpx;
+		padding-right: 16rpx;
 		box-sizing: border-box;
 	}
 
 	.py-32 {
-		padding: 32rpx 0;
+		padding-top: 32rpx;
+		padding-bottom: 32rpx;
 		box-sizing: border-box;
 	}
 
 	.py-16 {
-		padding: 16rpx 0;
+		padding-top: 16rpx;
+		padding-bottom: 16rpx;
 		box-sizing: border-box;
 	}
 
@@ -143,9 +158,17 @@
 	.text-color {
 		color: #46495F;
 	}
+	
+	.text-white {
+		color: #ffffff;
+	}
 
 	.text-d-size {
 		font-size: 32rpx;
+	}
+	
+	.text-size14 {
+		font-size: 28rpx;
 	}
 
 	.bg-paoc {

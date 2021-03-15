@@ -7,7 +7,7 @@
 			</view>
 		</view>
 		<view class="px-32 mb-32 news-big-box">
-			<view class="mt-32 bg-white border-6">
+			<view class="mt-32 bg-white border-6" v-if="tabIndex==0||tabIndex==1">
 				<view class="pa-32">
 					<view class="server-status flex items-center">
 						<image class="run-img" src="../../static/img/run.png" mode=""></image>
@@ -27,14 +27,11 @@
 			</view>
 			<view class="mt-32 bg-white border-6 pa-32">
 				<view class="server-status flex items-center">
-					<image class="run-img" src="../../static/img/money.png" mode=""></image>
-					<view class="server-css">建议最低20个跑币哦！要相信重赏之下必有勇夫</view>
+					<image class="run-img" src="../../static/img/edit.png" mode=""></image>
+					<view class="server-css">{{funlist[tabIndex].title}}</view>
 				</view>
-				<view class="mt-32 flex items-center">
-					<view class="text-color text-d-size">跑币：</view>
-					<input class="border money-width" type="number" placeholder="请输入您的报酬" />
-					<view class="text-color text-d-size ml-32">个</view>
-				</view>
+				<textarea maxlength='-1' class="more-input mt-32 detil-goods" auto-height
+					:placeholder="funlist[tabIndex].describe" />
 			</view>
 			<view class="mt-32 bg-white border-6 pa-32">
 				<view class="server-status flex items-center">
@@ -45,12 +42,16 @@
 			</view>
 			<view class="mt-32 bg-white border-6 pa-32">
 				<view class="server-status flex items-center">
-					<image class="run-img" src="../../static/img/edit.png" mode=""></image>
-					<view class="server-css">描述物品内容</view>
+					<image class="run-img" src="../../static/img/money.png" mode=""></image>
+					<view class="server-css">建议最低20个跑币哦！要相信重赏之下必有勇夫</view>
 				</view>
-				<textarea maxlength='-1' class="more-input mt-32 detil-goods" auto-height
-					placeholder="请描述您的商品信息:如取件码、姓名等等;方面取货哦!" />
+				<view class="mt-32 flex items-center">
+					<view class="text-color text-d-size">跑币：</view>
+					<input class="border money-width" type="number" placeholder="请输入您的报酬" />
+					<view class="text-color text-d-size ml-32">个</view>
+				</view>
 			</view>
+			
 			<view class="mt-32 w-full bg-paoc btn border-6" @click="gopay">发布</view>
 		</view>
 	</view>
@@ -65,17 +66,30 @@
 				funlist: [{
 					key: 0,
 					value: '帮我取',
+					title:'描述物品内容',
 					addr:{
 						to:'请输入拿货地址',
 						from:'请输入送达地址'
-					}
+					},
+					describe:'请描述您的商品信息:如取件码、姓名等等;方面取货哦!'
 				}, {
 					key: 1,
 					value: '帮我买',
+					title:'描述物品内容',
 					addr:{
 						to:'请输入购买地址',
 						from:'请输入送达地点'
-					}
+					},
+					describe:'请描述您的商品信息:如取件码、姓名等等;方面取货哦!'
+				}, {
+					key: 2,
+					value: '找人办事',
+					title:'描述简要描述待办事项',
+					addr:{
+						to:null,
+						from:null
+					},
+					describe:'请简要描述您的待办事项，方便有能力的跑男及时联系你哦！如：2020年1月3日下午14:30-15:30代课等等'
 				}]
 			}
 		},
