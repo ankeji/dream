@@ -33,6 +33,15 @@
                 "enablePullDownRefresh": false
             }
         }
+        ,{
+            "path" : "pages/authen/authen",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "跑男认证",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

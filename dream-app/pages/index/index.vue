@@ -25,6 +25,13 @@
 					</view>
 				</view>
 			</view>
+			<view class="mt-32 bg-white border-6 pa-32" v-if="tabIndex==2">
+				<view class="server-status flex items-center">
+					<image class="run-img" src="../../static/img/shi.png" mode=""></image>
+					<view class="server-css">请简要描述你要办的事，注重简要描述</view>
+				</view>
+				<input class="mt-32 border-bottm more-input" type="text" placeholder="请简要描述待办事项(简要)" />
+			</view>
 			<view class="mt-32 bg-white border-6 pa-32">
 				<view class="server-status flex items-center">
 					<image class="run-img" src="../../static/img/edit.png" mode=""></image>
@@ -84,12 +91,12 @@
 				}, {
 					key: 2,
 					value: '找人办事',
-					title:'描述简要描述待办事项',
+					title:'描述详细描述待办事项',
 					addr:{
 						to:null,
 						from:null
 					},
-					describe:'请简要描述您的待办事项，方便有能力的跑男及时联系你哦！如：2020年1月3日下午14:30-15:30代课等等'
+					describe:'请详细描述您的待办事项，方便有能力的跑男及时联系你哦！如：2020年1月3日下午14:30-15:30代课等等'
 				}]
 			}
 		},

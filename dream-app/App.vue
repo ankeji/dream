@@ -25,15 +25,19 @@
 	page {
 		background-color: #f3f3f3;
 	}
-		
-	
-	
+
+
+
 	.mt-32 {
 		margin-top: 32rpx;
 	}
 
 	.mb-32 {
 		margin-bottom: 32rpx;
+	}
+
+	.mb-16 {
+		margin-bottom: 16rpx;
 	}
 
 	.ml-32 {
@@ -47,7 +51,7 @@
 	.mr-32 {
 		margin-right: 32rpx;
 	}
-	
+
 	.mr-16 {
 		margin-right: 16rpx;
 	}
@@ -57,15 +61,32 @@
 	}
 
 	.mx-32 {
-		margin: 0 32rpx;
+		margin-left: 32rpx;
+		margin-right: 32rpx;
 	}
 
 	.my-32 {
-		margin: 32rpx 0;
+		margin-top: 32rpx;
+		margin-bottom: 32rpx;
+	}
+
+	.mx-16 {
+		margin-left: 16rpx;
+		margin-right: 16rpx;
+	}
+
+	.my-16 {
+		margin-top: 16rpx;
+		margin-bottom: 16rpx;
 	}
 
 	.pa-32 {
 		padding: 32rpx;
+		box-sizing: border-box;
+	}
+
+	.pa-16 {
+		padding: 16rpx;
 		box-sizing: border-box;
 	}
 
@@ -94,7 +115,7 @@
 		padding-right: 32rpx;
 		box-sizing: border-box;
 	}
-	
+
 	.px-16 {
 		padding-left: 16rpx;
 		padding-right: 16rpx;
@@ -132,9 +153,11 @@
 	.justify-between {
 		justify-content: space-between;
 	}
-	.flex-column{
+
+	.flex-column {
 		flex-direction: column;
 	}
+
 	.items-center {
 		align-items: center;
 	}
@@ -158,7 +181,7 @@
 	.text-color {
 		color: #46495F;
 	}
-	
+
 	.text-white {
 		color: #ffffff;
 	}
@@ -166,9 +189,13 @@
 	.text-d-size {
 		font-size: 32rpx;
 	}
-	
+
 	.text-size14 {
 		font-size: 28rpx;
+	}
+	
+	.text-size12 {
+		font-size: 24rpx;
 	}
 
 	.bg-paoc {
@@ -178,7 +205,28 @@
 	.w-full {
 		height: 100%;
 	}
-	.h-full{
+
+	.h-full {
 		height: 100vh;
+	}
+
+	.text-bold {
+		font-weight: bold;
+	}
+
+	.text-color-red {
+		color: red;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.text-left {
+		text-align: left;
+	}
+
+	.text-right {
+		text-align: right;
 	}
 </style>

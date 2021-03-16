@@ -1,5 +1,5 @@
 <template>
-	<view class="ma-32">
+	<view class="mx-32 my-16">
 		<view class="border-6 bg-paoc w-full border pa-32 flex">
 			<image class="user-img mr-16" src="../../static/logo.png" mode=""></image>
 			<view class="text-white">
@@ -25,7 +25,15 @@
 				</view>
 				<image class="nav-img" src="../../static/img/right.png" mode=""></image>
 			</view>
+			
 			<view class="flex justify-between items-center w-full border-bottm text-d-size py-32 px-16 text-size14">
+				<view class="flex items-center">
+					<image class="nav-left-img mr-16" src="../../static/img/zhuan.png" mode=""></image>
+					<view class="text-color">赚取跑币</view>
+				</view>
+				<image class="nav-img" src="../../static/img/right.png" mode=""></image>
+			</view>
+			<view class="flex justify-between items-center w-full border-bottm text-d-size py-32 px-16 text-size14" @click="goAuthen">
 				<view class="flex items-center">
 					<image class="nav-left-img mr-16" src="../../static/img/runman.png" mode=""></image>
 					<view class="text-color">成为跑男</view>
@@ -65,7 +73,11 @@
 			}
 		},
 		methods: {
-			
+			goAuthen(){
+				uni.navigateTo({
+				    url: '/pages/authen/authen'
+				});
+			}
 		}
 	}
 </script>
@@ -84,7 +96,7 @@ page{
 	margin-bottom: 8rpx;
 }
 .navlist-box{
-	margin-top: 100rpx;
+	margin-top: 30rpx;
 }
 .nav-img{
 	width: 24rpx;
