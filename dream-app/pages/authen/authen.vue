@@ -45,7 +45,7 @@
 			<label class="mx-32 text-size14">
 				<checkbox value="cb" :checked="false" />我已阅读《申请跑男协议》,勾选表示同意协议
 			</label>
-			<view class="mt-32 mx-32 w-full bg-paoc btn border-6">提交资料</view>
+			<view class="my-32 mx-32 w-full bg-paoc btn border-6">提交资料</view>
 		</view>
 	</view>
 </template>
