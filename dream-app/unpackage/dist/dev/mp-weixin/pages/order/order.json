@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "订单池",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "orderbar": "/components/orderbar"
+  }
 }

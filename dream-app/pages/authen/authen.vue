@@ -69,13 +69,18 @@
 } */
 	.authen-tip {
 		position: fixed;
-		top: 88rpx;
+		top: 0;
 		left: 0;
 		right: 0;
 		z-index: 5;
 		background: #FFFFFF;
 	}
 
+// #ifdef  H5
+	.authen-tip{
+		top: 88rpx;
+	}
+	// #endif
 	.authen-box {
 		margin-top: 100rpx;
 	}

@@ -1,1 +1,1 @@
-<view>订单中心</view>
+<view class="pa-32"><block wx:for="{{10}}" wx:for-item="item" wx:for-index="index" wx:key="index"><orderbar vue-id="{{'3c50aaa2-1-'+index}}" item="{{item}}" bind:__l="__l"></orderbar></block></view>

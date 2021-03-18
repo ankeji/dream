@@ -125,10 +125,19 @@
 		overflow-x: scroll;
 		border-top: solid 1px #e1e1e1;
 		position: fixed;
-		top: 88rpx;
+		top: 0;
 		z-index: 5;
 	}
-
+	
+	// #ifdef  H5
+	.big-tab-box{
+		top: 88rpx;
+	}
+	// #endif
+	
+	
+	
+	
 	.big-tab-box::-webkit-scrollbar {
 		display: none;
 	}

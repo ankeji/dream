@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/user/user",
     "pages/order/order",
-    "pages/success/success"
+    "pages/success/success",
+    "pages/authen/authen"
   ],
   "subPackages": [],
   "window": {
@@ -42,5 +43,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap64.json"
 }

@@ -1,0 +1,100 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* page{
+	background-color: #FFFFFF;
+} */
+.authen-tip.data-v-5d7c30a6 {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 5;
+		background: #FFFFFF;
+}
+.authen-box.data-v-5d7c30a6 {
+		margin-top: 100rpx;
+}
+.shen-card.data-v-5d7c30a6 {
+		width: 300rpx;
+		height: 260rpx;
+}
+.upload-btn.data-v-5d7c30a6 {
+		width: 220rpx;
+		height: 60rpx;
+		background-color: #46495F;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 60rpx;
+		margin: 8rpx auto;
+}
+.btn.data-v-5d7c30a6 {
+		height: 100rpx;
+		color: #ffffff;
+		text-align: center;
+		line-height: 100rpx;
+}
+
