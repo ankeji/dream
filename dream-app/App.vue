@@ -2,6 +2,7 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			// #ifdef H5
 			var lastTouchEnd = 0;
 			document.documentElement.addEventListener('touchend', function(event) {
 				var now = Date.now();
@@ -10,6 +11,8 @@
 				}
 				lastTouchEnd = now;
 			}, false);
+			// #endif
+			
 		},
 		onShow: function() {
 			console.log('App Show')
@@ -25,7 +28,13 @@
 	page {
 		background-color: #f3f3f3;
 	}
-
+	textarea{
+		width: 100%;
+		font-size: 32rpx;
+	}
+	input{
+		font-size: 32rpx;
+	}
 
 
 	.mt-32 {

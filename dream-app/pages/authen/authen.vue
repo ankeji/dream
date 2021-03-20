@@ -4,6 +4,14 @@
 		<view class="authen-box">
 			<view class="flex justify-between items-center ma-32 py-32 px-16 border-6 border-bottm bg-white">
 				<view class="text-size">
+					选择学校
+				</view>
+				<view class="">
+					<input type="text" class="text-right" value="" placeholder="请选择您的学校" />
+				</view>
+			</view>
+			<view class="flex justify-between items-center ma-32 py-32 px-16 border-6 border-bottm bg-white">
+				<view class="text-size">
 					真实姓名
 				</view>
 				<view class="">
