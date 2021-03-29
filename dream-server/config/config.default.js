@@ -24,8 +24,23 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1615254420455_9910';
 
   // add your middleware config here
-  config.middleware = [];
-
+  config.middleware = ['errorHandler', 'isAuthon'];
+  // 统一错误信息配置（注：match和ignore不可以同时配置）
+  config.errorHandler = {
+    enable: true, // 中间件开启配置
+    match: '/user', // 设置请求中间件的请求路由
+    ignore: '', // 设置不经过这个中间件的请求路由
+  };
+  config.isAuthon = {
+    enable: true, // 中间件开启配置
+    match: '/user', // 设置请求中间件的请求路由
+    ignore: '', // 设置不经过这个中间件的请求路由
+  };
+  config.security = {
+    csrf: { 
+      enable: false
+    }
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
@@ -37,7 +52,8 @@ module.exports = appInfo => {
   config.mongoose = {
     url: 'mongodb://127.0.0.1:27017/runman',
     options: {
-      // useNewUrlParser: true
+      useNewUrlParser: true,
+      useUnifiedTopology: true
     },
   };
   return {

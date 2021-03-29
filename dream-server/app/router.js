@@ -13,5 +13,7 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/user/login', controller.user.addUser);
+  router.post('/user/login', controller.user.userUpAndIn);
+  router.get('/user/count', controller.user.getUser);
+  router.get('/authon/add', controller.authon.userAuthon);
 };
