@@ -14,17 +14,12 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
-  // cors: {
-  //   enable: true,
-  //   package: 'egg-cors',
-  // }
-};
-
-exports.cors = {
-  enable: true,
-  package: 'egg-cors',
-};
-exports.mongoose = {
-  enable: true,
-  package: 'egg-mongoose',
+  cors: {
+    enable: true,
+    package: 'egg-cors',
+  },
+  mongoose:{
+    enable: true,
+    package: 'egg-mongoose',
+  }
 };

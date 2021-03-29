@@ -35,9 +35,9 @@ module.exports = appInfo => {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
   };
   config.mongoose = {
-    url: 'mongodb://127.0.0.1:27017/test',
+    url: 'mongodb://127.0.0.1:27017/runman',
     options: {
-      useNewUrlParser: true
+      // useNewUrlParser: true
     },
   };
   return {

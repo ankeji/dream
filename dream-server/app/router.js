@@ -13,7 +13,5 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
-  router.get('/test', controller.test.test);
-  router.get('/article', controller.article.index);
+  router.get('/user/login', controller.user.addUser);
 };
