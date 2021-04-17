@@ -7,7 +7,8 @@
 					选择学校
 				</view>
 				<view class="">
-					<input type="text" class="text-right" value="" placeholder="请选择您的学校" />
+					<input @click="goSchoolSelect" :disabled='true' type="text" class="text-right" value=""
+						placeholder="请选择您的学校" />
 				</view>
 			</view>
 			<view class="flex justify-between items-center ma-32 py-32 px-16 border-6 border-bottm bg-white">
@@ -23,7 +24,7 @@
 					身份证号
 				</view>
 				<view class="">
-					<input type="text" class="text-right" value="" placeholder="请填写您的身份证号" />
+					<input type="idcard" class="text-right" value="" placeholder="请填写您的身份证号" />
 				</view>
 			</view>
 			<view class="ma-32 py-32 px-16 border-6 border-bottm bg-white">
@@ -66,15 +67,20 @@
 			}
 		},
 		methods: {
-
+			goSchoolSelect() {
+				uni.navigateTo({
+					url: '/pages/schoolselect/schoolselect'
+				});
+			}
 		}
 	}
 </script>
 
-<style scoped>
-	/* page{
-	background-color: #FFFFFF;
-} */
+<style>
+	page {
+		font-size: 32rpx;
+	}
+
 	.authen-tip {
 		position: fixed;
 		top: 0;
@@ -84,10 +90,11 @@
 		background: #FFFFFF;
 	}
 
-// #ifdef  H5
-	.authen-tip{
+	// #ifdef  H5
+	.authen-tip {
 		top: 88rpx;
 	}
+
 	// #endif
 	.authen-box {
 		margin-top: 100rpx;

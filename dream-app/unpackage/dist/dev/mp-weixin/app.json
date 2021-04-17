@@ -4,7 +4,8 @@
     "pages/user/user",
     "pages/order/order",
     "pages/success/success",
-    "pages/authen/authen"
+    "pages/authen/authen",
+    "pages/schoolselect/schoolselect"
   ],
   "subPackages": [],
   "window": {
@@ -43,5 +44,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap15.json"
 }

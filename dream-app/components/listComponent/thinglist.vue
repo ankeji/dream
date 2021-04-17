@@ -1,6 +1,6 @@
 <template>
 	<view>
-		待办事项列表
+		事件列表
 	</view>
 </template>
 

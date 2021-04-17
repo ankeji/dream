@@ -26,6 +26,7 @@
 <style>
 	/*每个页面公共css */
 	page {
+		font-size: 32rpx;
 		background-color: #f3f3f3;
 	}
 	textarea{

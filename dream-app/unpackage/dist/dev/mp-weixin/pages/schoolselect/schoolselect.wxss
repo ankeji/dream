@@ -1,0 +1,28 @@
+
+page {
+	height: 100vh;
+	background-color: #FFFFFF !important;
+}
+.input-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	background: #FFFFFF;
+}
+.select-input {
+	width: 100%;
+	border: solid 1rpx #46495F;
+	border-radius: 40rpx;
+	height: 44rpx;
+	box-sizing: content-box;
+}
+.school-list-box{
+	padding-top: 100rpx;
+}
+.list {
+	border-bottom: solid 1rpx #e1e1e1;
+	padding: 20rpx 32rpx;
+}
+

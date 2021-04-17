@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
-
+import tool from './static/js/tool.js'
+Vue.prototype.$tool = tool
 Vue.config.productionTip = false
 
 App.mpType = 'app'

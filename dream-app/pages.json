@@ -42,6 +42,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/schoolselect/schoolselect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择学校",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

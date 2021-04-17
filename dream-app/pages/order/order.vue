@@ -1,13 +1,13 @@
 <template>
 	<view class="pa-32">
-		<orderbar v-for="(item,index) in 10" :key="index" :item="item"></orderbar>
+		<orderlist v-for="(item,index) in 10" :key="index" :item="item"></orderlist>
 	</view>
 </template>
 
 <script>
-	import orderbar from '../../components/orderbar'
+	import orderlist from '../../components/listComponent/orderlist'
 	export default {
-		components: {orderbar},
+		components: {orderlist},
 		data() {
 			return {
 				
